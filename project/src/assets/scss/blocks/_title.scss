@@ -1,0 +1,39 @@
+.title {
+    @include title;
+
+
+    &--h1 {
+        font-size: rem($font-size-large);       
+        line-height: $line-height-percent-huge;
+
+        // margin-bottom: rem(20px);
+
+        @media #{$screen-tablet} {
+            font-size: rem($font-size-huge);
+        }
+    }
+    &--h2 {
+        font-size: rem($font-size-medium);
+
+        // margin-bottom: rem(20px);
+        
+        @media #{$screen-tablet} {
+            font-size: rem($font-size-large);
+        }
+    }
+
+    &--h3 {
+        font-size: rem($font-size-middle);
+        font-weight: $font-weight-medium; 
+        
+        // margin-bottom: rem(10px);   
+
+        @media #{$screen-tablet} {
+            font-size: rem($font-size-medium);
+        }    
+    }
+
+    &--block {
+        @include title-block; 
+    }
+}
